@@ -117,7 +117,16 @@ const Results = () => {
   return (
     <div className="min-h-screen afya-gradient py-12">
       <div className="max-w-5xl mx-auto px-6">
-        <h1 className="text-3xl font-bold text-center text-gray-900 mb-10">Your Assessment Results</h1>
+        <div className="text-center mb-8">
+          <div className="w-32 mx-auto mb-4">
+            <img 
+              src="/lovable-uploads/53b74825-2733-4d4c-8e33-f9aa1baab581.png" 
+              alt="Breast Cancer Awareness" 
+              className="w-full h-auto"
+            />
+          </div>
+          <h1 className="text-3xl font-bold text-center text-gray-900 mb-4">Your Assessment Results</h1>
+        </div>
         
         <div className="grid md:grid-cols-2 gap-8">
           <div>
@@ -139,6 +148,16 @@ const Results = () => {
                 <MailIcon size={16} />
                 Email to Doctor
               </Button>
+            </div>
+            
+            <div className="mt-8">
+              <div className="w-full">
+                <img 
+                  src="/lovable-uploads/668adf61-f763-4950-8654-1adcea1d7170.png" 
+                  alt="Breast self-examination" 
+                  className="w-full h-auto rounded-lg shadow-sm"
+                />
+              </div>
             </div>
           </div>
           
@@ -184,6 +203,16 @@ const Results = () => {
                 >
                   Return Home
                 </Button>
+              </div>
+            </div>
+            
+            <div className="mt-8">
+              <div className="w-full">
+                <img 
+                  src="/lovable-uploads/65fdcc52-45b2-43ef-b1fd-cf6ceec297e6.png" 
+                  alt="Pink ribbon support" 
+                  className="w-full h-auto rounded-lg shadow-sm"
+                />
               </div>
             </div>
           </div>

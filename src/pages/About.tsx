@@ -28,6 +28,13 @@ const About = () => {
       <section className="py-16 bg-afya-700 text-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center">
+            <div className="w-40 mx-auto mb-6">
+              <img 
+                src="/lovable-uploads/53b74825-2733-4d4c-8e33-f9aa1baab581.png" 
+                alt="Breast Cancer Awareness" 
+                className="w-full h-auto"
+              />
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Mission</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Empowering East African women with personalized breast cancer risk assessments, 
@@ -61,10 +68,9 @@ const About = () => {
             </div>
             <div className="relative">
               <div className="rounded-xl overflow-hidden shadow-xl">
-                {/* Placeholder image */}
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-                  alt="Medical team discussing" 
+                  src="/lovable-uploads/20aee352-d6d7-4aea-a08f-5bde55e97740.png"
+                  alt="Medical visualization" 
                   className="w-full h-auto"
                 />
               </div>
@@ -147,6 +153,15 @@ const About = () => {
       {/* Call to Action */}
       <section className="py-16 bg-afya-600">
         <div className="max-w-4xl mx-auto px-6 text-center text-white">
+          <div className="flex justify-center mb-8">
+            <div className="w-48">
+              <img 
+                src="/lovable-uploads/65fdcc52-45b2-43ef-b1fd-cf6ceec297e6.png" 
+                alt="Pink ribbon support" 
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
           <h2 className="text-3xl font-bold mb-4">Join Our Mission</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
             Whether you're looking to assess your own risk or support our work in improving breast 

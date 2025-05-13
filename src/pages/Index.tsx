@@ -65,10 +65,9 @@ const Index = () => {
           </div>
           <div className="lg:w-1/2 mt-8 lg:mt-0">
             <div className="relative rounded-xl overflow-hidden shadow-xl">
-              {/* Placeholder image - replace with actual image path */}
               <img
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
-                alt="African woman consulting with doctor"
+                src="/lovable-uploads/53b74825-2733-4d4c-8e33-f9aa1baab581.png"
+                alt="Breast Cancer Awareness"
                 className="w-full h-64 md:h-96 object-cover transform hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -108,29 +107,41 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: '📊',
-                title: "Personalized Risk Analysis",
-                desc: "Receive a tailored evaluation based on your unique health profile and East African genetic factors"
-              },
-              {
-                icon: '🛡️',
-                title: "Prevention Strategies",
-                desc: "Get actionable steps to reduce your risk factors through lifestyle changes and early detection"
-              },
-              {
-                icon: '🏥',
-                title: "Local Resources",
-                desc: "Connect with nearby screening facilities, specialists, and support groups in your community"
-              }
-            ].map((item, index) => (
-              <div key={index} className="afya-card hover:translate-y-[-5px] h-full">
-                <div className="text-5xl mb-5">{item.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
+            <div className="afya-card hover:translate-y-[-5px] h-full">
+              <div className="w-24 h-24 mx-auto mb-4">
+                <img 
+                  src="/lovable-uploads/20aee352-d6d7-4aea-a08f-5bde55e97740.png" 
+                  alt="Breast health visualization" 
+                  className="w-full h-full object-contain"
+                />
               </div>
-            ))}
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Personalized Risk Analysis</h3>
+              <p className="text-gray-600">Receive a tailored evaluation based on your unique health profile and East African genetic factors</p>
+            </div>
+            
+            <div className="afya-card hover:translate-y-[-5px] h-full">
+              <div className="w-24 h-24 mx-auto mb-4">
+                <img 
+                  src="/lovable-uploads/668adf61-f763-4950-8654-1adcea1d7170.png" 
+                  alt="Prevention strategies" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Prevention Strategies</h3>
+              <p className="text-gray-600">Get actionable steps to reduce your risk factors through lifestyle changes and early detection</p>
+            </div>
+            
+            <div className="afya-card hover:translate-y-[-5px] h-full">
+              <div className="w-24 h-24 mx-auto mb-4">
+                <img 
+                  src="/lovable-uploads/de055ee0-a17f-46ab-a39d-4205657dbf97.png" 
+                  alt="Local resources" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Local Resources</h3>
+              <p className="text-gray-600">Connect with nearby screening facilities, specialists, and support groups in your community</p>
+            </div>
           </div>
         </div>
       </section>
@@ -170,6 +181,13 @@ const Index = () => {
       {/* Final CTA */}
       <section className="py-16 bg-afya-700">
         <div className="max-w-4xl mx-auto px-6 text-center text-white">
+          <div className="w-32 mx-auto mb-6">
+            <img 
+              src="/lovable-uploads/65fdcc52-45b2-43ef-b1fd-cf6ceec297e6.png" 
+              alt="Pink ribbon support" 
+              className="w-full h-auto"
+            />
+          </div>
           <h2 className="text-3xl font-bold mb-4">Take Control of Your Breast Health Today</h2>
           <p className="text-lg mb-6 max-w-2xl mx-auto">
             Early awareness leads to better outcomes. Start your personalized assessment now.
