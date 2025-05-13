@@ -1,5 +1,92 @@
-/* Global styles */
-body {
-    margin: 0;
-    min-height: 100vh;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 330 100% 99%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 335 83% 52%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 330 100% 96%;
+    --secondary-foreground: 335 83% 30%;
+
+    --muted: 330 10% 96.1%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 335 80% 96%;
+    --accent-foreground: 335 83% 35%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 330 20% 91.4%;
+    --input: 330 20% 91.4%;
+    --ring: 335 83% 52%;
+
+    --radius: 0.5rem;
   }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium leading-tight;
+  }
+}
+
+@layer components {
+  .afya-container {
+    @apply max-w-7xl mx-auto px-6 py-6 md:py-12;
+  }
+
+  .afya-gradient {
+    @apply bg-gradient-to-b from-white to-afya-50;
+  }
+
+  .afya-btn-primary {
+    @apply bg-afya-600 hover:bg-afya-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition-all duration-300 hover:shadow-lg;
+  }
+
+  .afya-btn-secondary {
+    @apply border border-afya-500 text-afya-700 hover:bg-afya-50 font-semibold py-3 px-6 rounded-full transition-all duration-300;
+  }
+
+  .afya-card {
+    @apply bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .afya-section {
+    @apply py-12;
+  }
+}
+
+@layer utilities {
+  .afya-heading-lg {
+    @apply text-4xl md:text-5xl font-bold leading-tight;
+  }
+  
+  .afya-heading {
+    @apply text-3xl font-bold mb-4;
+  }
+  
+  .afya-text {
+    @apply text-gray-600;
+  }
+}
